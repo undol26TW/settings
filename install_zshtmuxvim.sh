@@ -26,15 +26,6 @@ set -sg escape-time 0
 # bind keys
 bind | split-window -h
 bind - split-window -v
-bind C-a-s choose-tree
-bind C-a-d detach-client
-bind C-a-r command-prompt -I "rename-session "
-bind C-a-[ copy-mode
-bind C-a-n next-window
-bind C-a-p previous-window
-bind C-a-c new-window
-bind C-a-k confirm-before -p "kill-window #W? (y/n)" kill-window
-bind C-a-w choose-window
 EOF
 
 source ~/.tmux.conf
@@ -68,9 +59,8 @@ cat $CUR_PATH/plugin_list >> ~/.vimrc
 
 vim +slient +VimEnter +PlugInstall +qall
 
-rm -rf SimpleVimTutorial
-sudo chown -R undol26 ~/.vim
+cd ../
+rm -rf $RELATIVE_DIR/SimpleVimTutorial
+sudo chown -R $USER ~/.vim
 echo "************************************"
 echo ""
-
-
