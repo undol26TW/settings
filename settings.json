@@ -1,0 +1,127 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": false,
+    "[cpp]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools",
+      "editor.formatOnSave": true
+    },
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "highlightSelections.borderColor": "red",
+    "highlightSelections.borderStyle": "solid",
+    "highlightSelections.borderWidth": "2px",
+    "powermode.enabled": true,
+    "powermode.enableShake": false,
+    "powermode.presets":"flames",
+    "powermode.enableStatusBarComboCounter": true,
+    "powermode.enableStatusBarComboTimer": true,
+    "highlight.regexes": {
+        "(// ?TODO:?)(.*)": [
+          {
+            "overviewRulerColor": "#FFCC00",
+            "backgroundColor": "#FFCC00",
+            "color": "#1F1F1F",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#D9AD00",
+            "color": "#1F1F1F"
+          }
+        ],
+        "(// ?FIXME:?)(.*)": [
+          {
+            "overviewRulerColor": "#E75536",
+            "backgroundColor": "#E75536",
+            "color": "#EDFFEA",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#EA846F",
+            "color": "#1F1F1F"
+          }
+        ],
+        "(// ?END:?)(.*)": [
+          {
+            "overviewRulerColor": "#FAFBA4",
+            "backgroundColor": "#FAFBA4",
+            "color": "#1F1F1F",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#F5FCC1",
+            "color": "#1F1F1F"
+          }
+        ],
+        "(// ?CHECK:?)(.*)": [
+          {
+            "overviewRulerColor": "#216353",
+            "backgroundColor": "#216353",
+            "color": "#EDFFEA",
+            "fontWeight": "bold",
+          },
+          {
+            "backgroundColor": "#75DAAD",
+            "color": "#1F1F1F"
+          }
+        ],
+        "(// ?DELETE:?)(.*)": [
+          {
+            "overviewRulerColor": "#843B62",
+            "backgroundColor": "#843B62",
+            "color": "#EDFFEA",
+            "fontWeight": "bold",
+          },
+          {
+            "backgroundColor": "#F67E7D",
+            "color": "#1F1F1F"
+          }
+        ],
+        "(// )(@\\w+)": [
+          {},
+          {
+            "color": "#4DE0FF"
+          }
+        ]
+      },
+      "path-intellisense.extensionOnImport": true,
+      "path-intellisense.showHiddenFiles": true,
+      "workbench.iconTheme": "vscode-icons",
+      "editor.occurrencesHighlight": false,
+      "editor.selectionHighlight": false,
+      "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+      },
+      "sync.gist": "fab40267113b9011903ff4ed73f6daf0",
+      "terminal.integrated.inheritEnv": false,
+      "debug.onTaskErrors": "debugAnyway",
+      "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+      },
+      // "terminal.integrated.automationShell.linux": "/bin/bash",
+      "terminal.integrated.automationShell.linux": "zsh",
+      "terminal.integrated.defaultProfile.linux": "zsh",
+      "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "bash"
+        },
+        "zsh": {
+          "path": "zsh"
+        },
+        "fish": {
+          "path": "fish"
+        },
+        "tmux": {
+          "path": "tmux",
+          "icon": "terminal-tmux"
+        },
+        "pwsh": {
+          "path": "pwsh",
+          "icon": "terminal-powershell"
+        },
+        "/usr/bin/zsh": {
+          "path": "zsh"
+        }
+      },
+      "diffEditor.wordWrap": "on",
+}
