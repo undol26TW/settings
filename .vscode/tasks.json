@@ -1,0 +1,68 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "prerun",
+            "type": "shell",
+            "dependsOn": [
+                "build package only"
+            ],
+            "command": "source ../../devel/setup.zsh && export ROS_MASTER_URI=http://localhost:11311/ "
+        },
+        {
+            "label": "build all packages",
+            "type": "shell",
+            "command": "cd ~/targo_ws/ && catkin config --extend /opt/ros/melodic && catkin build -DCMAKE_BUILD_TYPE=Debug -j8",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build package only",
+            "type": "shell",
+            "command": "cd ~/targo_ws/ && catkin config --extend /opt/ros/melodic && catkin build ${workspaceFolderBasename} -DCMAKE_BUILD_TYPE=Debug -j8",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "make_debug",
+            "type": "catkin_make",
+            "args": [
+                "--directory",
+                "~/targo_ws/",//"${workspaceFolder}",
+                "-DCMAKE_BUILD_TYPE=Debug", // This extra argument enables built with debug symbols
+            ],
+            "problemMatcher": [
+                "$catkin-gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "make_debug_and_core",
+            "dependsOn": [
+                "make_debug",
+                "roscore: roscore", // This task is provided by vscode-ros
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "cd ~/targo_ws/ && catkin clean --yes"
+        },
+        {
+            "label": "release",
+            "type": "shell",
+            "command": "sudo checkinstall --install=no catkin build -j4 --cmake--args -DCMAKE_BUILD_TYPE=Release"
+        }
+    ]
+}

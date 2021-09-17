@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/twinny/targo_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "${workspaceFolder}/src/driver/twinny_M_TG_100_A02_hardware_driver/twinny_lds_driver/include/**",
+                "${workspaceFolder}/src/driver/twinny_M_TG_100_A02_hardware_driver/robot_bringup/include/**",
+
+                "${workspaceFolder}/src/twinny_common/twinny_geometry/include/**",
+                "${workspaceFolder}/src/twinny_common/twinny_robot_model/include/**",
+                "${workspaceFolder}/src/twinny_common/twinny_spdlog/include/**",
+                "${workspaceFolder}/src/twinny_common/twinny_visualization/include/**",
+
+                "${workspaceFolder}/src/twinny_M_TG_targo/module//twinny_costmap_2d/costmap_2d/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_camera_rotator/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_costmap_2d/twinny_costmap_2d/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_emergency_detector/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_heading_control/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_targo_object_detection_old_module/twinny_object_detection/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_targo_object_detection_old_module/twinny_color/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_targo_object_detection_old_module/twinny_histogram/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_targo_object_detection_old_module/twinny_point_cloud/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_lidar_merger/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_local_map_server/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_manual_controller/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_parameter_loader/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_targo_local_planner/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_trajectory_controller/include/**",
+                "${workspaceFolder}/src/twinny_M_TG_targo/module/twinny_util/include/**",
+
+                "${workspaceFolder}/src/driver/twinny_M_TG_100_A02_hardware_driver/twinny_MCU_driver/include/**",
+                "${workspaceFolder}/src/driver/twinny_M_TG_100_A02_hardware_driver/twinny_mobilebase_driver_INROS/include/**",
+
+                "${workspaceFolder}/src/twinny_M_TG_targo/engine/twinny_targo_engine/include/**",
+                "/usr/include/**"
+            ],
+            "defines": [],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
